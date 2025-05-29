@@ -14,12 +14,12 @@ function uppg9 (){
     function sort(numbers) {
         // För varje nummer i arrayen
         for (number of numbers) {
-            // Om numret delas med två och RESTEN av delningen INTE är likamed 0 - är talet udda
+            // Om numret delas med två och RESTEN av delningen är likamed 0 - är talet jämnt
             if (number % 2 !== 0) {
-                console.log(`Talet ${number} är udda!`);
-            // Om numret delas med två och RESTEN av delningen ÄR likamed 0 - är talet jämnt
-            } else if (number % 2 == 0) {
-                console.log(`Talet ${number} är jämnt!`);
+                console.log(`${number} udda`);
+            // Annars är talet udda
+            } else {
+                console.log(`${number} jämnt`);
             } 
         }
     }

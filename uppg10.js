@@ -8,35 +8,28 @@ function uppg10(){
     // other ska innehålla alla andra tal
     // returnera ett objekt med de tre arrayerna
 
-  let bigEven = [];
-  let smallOdd = [];
-  let other = [];
-  // Funktion som tar numbers arrayen i parameter input
-  function sortNumbers(numbers) {
-    // För varje nummer i arrayen
+// Deklarerar objektet som ska returneras
+let results = {
+  bigEven: [],
+  smallOdd: [],
+  other: [],
+}
+  // För varje nummer i arrayen
     for (number of numbers) {
       // Om numret delas med två och RESTEN av delningen ÄR likamed 0 OCH numret är MER eller likamed än 10.
-      if (number % 2 == 0 && number >= 10)  {
-        // Lägg till numret i arrayen bigEven
-        bigEven.push(number);
+      if (number % 2 == 0 && number > 10)  {
+        // Lägg till numret i arrayen bigEven i objektet results
+        results.bigEven.push(number);
         // Om numret delas med två och resten av delningen INTE är likamed 0 OCH numret är mindre än 10 
       } else if (number % 2 !== 0 && number < 10) {
-        // Lägg till numret i arrayen smallOdd
-        smallOdd.push(number);
+        // Lägg till numret i arrayen smallOdd i objektet results
+        results.smallOdd.push(number);
       } else {
-        // Om inget påstående stämmer, lägg till numret i arrayen "other"
-        other.push(number);
+        // Om inget påstående stämmer, lägg till numret i arrayen "other" i objektet results
+        results.other.push(number);
       }
     }
-    // Logga samtliga arrayer
-    console.log(`BigEven är likamed: ${bigEven}`);
-    console.log(`smallOdd är likamed: ${smallOdd}`);
-    console.log(`other är lika med: ${other}`);
+    // Returnera objektet
+    return results;
   }
-  // Anropar funktionen med numbers arrayen
-  sortNumbers(numbers);
-
-  }
-  
   module.exports = { uppg10 };
-  

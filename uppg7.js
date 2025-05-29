@@ -13,9 +13,7 @@ function uppg7() {
         // Return med svaret
         return sum;
     }
-    // Loggar svaret med parametrar "5" och "10"
-    console.log(sum(5, 10));
- 
+    return sum(5, 10);
 }
 
 module.exports = { uppg7 };
