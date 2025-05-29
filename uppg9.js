@@ -16,7 +16,7 @@ function uppg9 (){
         for (number of numbers) {
             // Om numret delas med två och RESTEN av delningen är likamed 0 - är talet jämnt
             if (number % 2 === 0) {
-                console.log(number, "jämnt");
+                console.log(number, "jämt");
             // Annars är talet udda
             } else {
                 console.log(number, "udda");
